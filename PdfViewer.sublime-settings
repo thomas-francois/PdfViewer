@@ -1,0 +1,9 @@
+{
+    // Determines the behavior of the image viewer when opening images.
+    // Possible values are : "preview", "replace_tab", and "new_tab".
+    "image_viewer_behavior": "preview",
+
+    // Sets the dots per inch (DPI) resolution for rendering images.
+    // Higher values enhance image quality but may require longer rendering times.
+    "image_dpi": 100,
+}
