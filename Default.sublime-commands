@@ -1,6 +1,6 @@
 [
     {
-        "caption": "PDF Viewer: View PDF",
+        "caption": "Pdf Viewer: View PDF",
         "command": "pdf_viewer"
     }
 ]
