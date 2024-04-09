@@ -2,7 +2,8 @@
 
 PdfViewer is a Sublime Text package that allows you to preview PDF files directly within Sublime Text.
 
-![Usage](https://github.com/thomas-francois/PdfViewer/assets/103375765/087c3a70-840a-493a-9a3c-b17082932e75)
+![Usage PdfViewer](https://github.com/thomas-francois/PdfViewer/assets/103375765/8cd854fb-25c0-464a-80ee-d28737c33da2)
+
 
 
 ## Installation
