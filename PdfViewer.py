@@ -4,9 +4,6 @@ import os
 import sublime
 import sublime_plugin
 
-from .packages.fitz import fitz
-from .packages.PIL import Image
-
 
 class PdfViewerCommand(sublime_plugin.TextCommand):
 
@@ -33,6 +30,9 @@ class PdfViewerCommand(sublime_plugin.TextCommand):
 
 
     def convert_file(self, file_path):
+        from .packages import fitz
+        from .packages.PIL import Image
+
         file_name = os.path.splitext(os.path.basename(file_path))[0]
         temp_dir = self.get_temp_dir()
 
@@ -42,6 +42,8 @@ class PdfViewerCommand(sublime_plugin.TextCommand):
             image_path = os.path.join(temp_dir, file_name + f"_{page_nbr}.png")
             pix = page.get_pixmap(dpi=self.settings.get('image_dpi', 100))
             pix.save(image_path)
+
+        doc.close()
 
         # Concatenate all images
         with Image.open(image_path) as img:
