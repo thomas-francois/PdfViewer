@@ -1,23 +1,20 @@
 [
     {
-        "caption": "Preferences",
-        "mnemonic": "n",
         "id": "preferences",
         "children": [
             {
-                "caption": "Package Settings",
-                "mnemonic": "P",
                 "id": "package-settings",
                 "children": [
                     {
                         "caption": "PdfViewer",
                         "children": [
                             {
-                                "command": "open_file",
+                                "caption": "Settings",
+                                "command": "edit_settings",
                                 "args": {
-                                    "file": "${packages}/PdfViewer/PdfViewer.sublime-settings"
+                                    "base_file": "${packages}/PdfViewer/PdfViewer.sublime-settings",
+                                    "default": "{\n\t$0\n}\n",
                                 },
-                                "caption": "Settings"
                             },
                         ]
                     }
